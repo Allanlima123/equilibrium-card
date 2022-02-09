@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --cor-white:#ffffff;
+    --cor-cyan:#00fff7;
+    --cor-soft-blue:#8bacda;
+    --cor-dark-card:#14253d;
+    --cor-dark-main:#0d192b;
+    --cor-dack-line:#2f415b;
+
+    --fonte-outfit: 'Outfit', sans-serif;
+}

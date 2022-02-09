@@ -1,0 +1,150 @@
+body{
+    background: var(--cor-dark-main);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-card{
+    width: 340px;
+    background: var(--cor-dark-card);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.container-card .imagem-principal:hover{
+    position: relative;
+    overflow: hidden;
+}
+
+.container-card .imagem-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.container-card .imagem-principal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-card .imagem-principal:hover .imagem-active{
+    left: 50%;
+    transition: .3s linear;
+}
+
+.container-card .imagem-principal .imagem-active{
+    position: absolute;
+    background: #00fff794;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card .imagem-principal .imagem-active .olho{
+    width: 45px;
+    height: 45px;
+}
+
+.container-card .informacoes{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container-card .informacoes h3{
+    color: var(--cor-white);
+    font-weight: 600;
+}
+
+.container-card .informacoes h3:hover{
+    color: var(--cor-cyan);
+    cursor: pointer;
+}
+
+.container-card .informacoes p{
+    color: var(--cor-soft-blue);
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.container-card .informacoes .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid var(--cor-dack-line);
+    padding-bottom: 25px;
+}
+
+.container-card .informacoes .box .Diamante,
+.container-card .informacoes .box .days{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.container-card .informacoes .box .Diamante img,
+.container-card .informacoes .box .days img{
+    margin-right: 8px;
+}
+
+.container-card .informacoes .box .Diamante span{
+    color: var(--cor-cyan);
+    
+}
+
+.container-card .informacoes .box .days span{
+    color: var(--cor-soft-blue);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.container-card .informacoes .developer{
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+}
+
+.container-card .informacoes .developer img{
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid var(--cor-white);
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.container-card .informacoes .developer strong{
+    color: var(--cor-soft-blue);
+    font-weight: 300;
+}
+
+.container-card .informacoes .developer span{
+    color: var(--cor-white);
+}
+
+.container-card .informacoes .developer span:hover{
+    color: var(--cor-cyan);
+    cursor: pointer;
+}
+
+.attribution{
+    color: var(--cor-white);
+}
+
+.attribution a{
+    color: var(--cor-cyan);
+}
+
